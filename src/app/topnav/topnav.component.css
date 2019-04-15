@@ -1,0 +1,22 @@
+/* top nav bar */
+
+#envelope{
+    margin-top: 6px;
+    padding: 0 6px;
+}
+
+.info{
+    font-size: 20px;
+    color:#28B463 ;
+}
+
+/* hide search encelope and welcome to locus */
+
+@media only screen and (max-width: 768px){
+    #envelope{
+        display: none;
+    }
+    #welcome-locus{
+        display: none;
+    }
+}

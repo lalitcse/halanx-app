@@ -1,0 +1,11 @@
+.login-div{
+    border: 1px solid rgb(219, 219, 219);
+    padding: 40px;
+    border-radius: 4px;
+    margin-top: 40px;
+}
+
+.log-one:focus,.log-one:active {
+    outline: none !important;
+    box-shadow: none;
+ }

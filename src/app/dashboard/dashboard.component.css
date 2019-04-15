@@ -1,0 +1,142 @@
+
+#sidebar-wrapper{
+    z-index: 1;
+    position: absolute;
+    width: 250px;
+    height: 100%;
+    overflow-y: hidden;
+    background: #2F4050;
+    transition:0.5s;
+}
+
+#page-content-wrapper{
+    width: 100%;
+    position: absolute;
+    padding-left: 250px;
+    transition: all 100ms linear;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+
+#sidebar-wrapper.active{
+    left: -250px;
+    
+}
+#page-content-wrapper.active{
+    padding-left: 0px
+    
+}
+
+
+
+/* toggle button */
+#menu-toggle{
+    background-color: #28B463;
+    color: white;
+}
+
+.active-1{
+    color: #28B463 !important;
+}
+
+
+
+
+/* add brand button */
+.add-brand{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.add-brand-btn a{
+    color: white;
+}
+
+.add-brand-btn {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #28B463;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    padding: 4px;
+    width: 220px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-top: 20px;
+    
+  }
+  
+  .add-brand-btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .add-brand-btn span:after {
+    content: '\002B';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .add-brand-btn:hover span {
+    padding-right: 25px;
+  }
+  
+  .add-brand-btn:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  #sidebar-wrapper nav ul li i{
+    padding: 12px;
+    color: #A7B1C2;
+    font-size: 20px;
+}
+
+.sublist{
+    text-indent: 22px;
+}
+
+.main-list a{
+    color:#A7B1C2;
+    text-decoration: none;
+    font-size: 18px;
+    display: inline-block;
+    width: 100%;
+}
+
+.main-list ul li a{
+    padding: 10px;
+}
+
+.main-list:hover{
+    background-color:#293846;
+    border-left: 2px solid #28B463;
+    width: 100%;
+}
+
+.main-list a:hover{
+    color: white;
+    
+}
+.main-list ul li a:hover{
+  color: white;
+  background-color: #202c38;
+  display: block;
+  text-indent: 44px;
+  
+}
+.main-list{
+  display: block;
+}
+.brand-box{
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
